@@ -1,16 +1,15 @@
-import { Beaker, Lightbulb, Shield, Globe, Database, BookOpen, GraduationCap } from 'lucide-react';
+import {Brain, Beaker, Lightbulb, Shield, Globe, Database, BookOpen, GraduationCap } from 'lucide-react';
 
 export const Experiments = () => {
   const experiments = [
     {
-      icon: Shield,
-      title: "Cybersecurity Mastery",
-      status: "Learning",
-      description: "Deep diving into cybersecurity fundamentals through comprehensive Udemy coursework, covering network security, ethical hacking, and threat analysis.",
-      nextSteps: "Complete penetration testing modules and earn cybersecurity certification.",
-      techStack: ["Kali Linux", "Wireshark", "Metasploit", "OWASP"],
-      stage: "35%",
-      type: "course"
+      icon: Brain,
+      title: "AI Code Reviewer",
+      status: "In Progress",
+      description: "Building an intelligent code review system that learns from team preferences and coding standards.",
+      nextSteps: "Implement context-aware suggestions and integrate with popular Git platforms.",
+      techStack: ["OpenAI", "AST Parsing", "Python"],
+      stage: "70%"
     },
     {
       icon: Database,
