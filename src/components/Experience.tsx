@@ -8,40 +8,39 @@ export const Experience = () => {
 
   const experiences = [
     {
-      company: "TechCorp Solutions",
-      role: "Senior Full-Stack Developer",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
-      type: "Full-time",
-      challenges: "Legacy system modernization, team scaling, performance optimization",
-      actions: "Led migration to microservices, implemented CI/CD, mentored 5 junior developers",
-      results: "Reduced deployment time by 70%, improved system performance by 40%",
-      skills: ["React", "Node.js", "AWS", "Docker", "TypeScript"],
-      teamSize: "12 developers"
+      company: "Microsoft",
+      role: "Software Engineer Intern",
+      period: "June 2023 - August 2023",
+      location: "Lagos, Nigeria",
+      type: "Internship",
+      challenges: "Cross-platform deployment complexity, cloud service integration, and infrastructure reliability",
+      actions: "Self-taught Bash for automation, supported data validation across AWS/Azure/GCP, collaborated with teams to troubleshoot and refine deployment pipelines",
+      results: "Improved backend service scalability and reliability, streamlined deployment workflows, and enhanced platform resilience through better collaboration",
+      skills: ["Bash", "SQL", "AWS", "Azure", "Google Cloud", "Linux"],
+      teamSize: "11 developers"
     },
     {
-      company: "StartupXYZ",
-      role: "Lead Frontend Developer",
-      period: "2020 - 2022",
+      company: "Zenstrin",
+      role: "Software Engineer",
+      period: "2024 - Present",
       location: "Remote",
-      type: "Full-time",
-      challenges: "Building MVP from scratch, rapid prototyping, user experience optimization",
-      actions: "Architected scalable frontend, implemented design system, optimized for mobile",
-      results: "Delivered MVP 3 months ahead of schedule, achieved 95% user satisfaction",
-      skills: ["Vue.js", "Python", "Firebase", "Figma", "Jest"],
-      teamSize: "6 developers"
+      type: "Contract",
+      challenges: "Real-time data extraction, reducing LLM hallucinations, aligning AI output with business needs",
+      actions: "Developed Python-based AI search platform, engineered scalable LLM pipelines, fine-tuned prompts using NLP and guard rails, and collaborated cross-functionally on feature alignment",
+      results: "Cut manual data extraction effort by 70%, boosted engagement by 30% through improved LLM responsiveness, and delivered clean, maintainable AI infrastructure",
+      skills: ["Python", "LLMs", "Next JS", "NLP", "Backend Development","Data Pipelines", "JSON", "Dashboarding"],
+      teamSize: "2 developers"
     },
     {
-      company: "FreelanceWork",
-      role: "Full-Stack Developer",
-      period: "2018 - 2020",
-      location: "Various",
+      company: "Iwemi",
+      role: "Web Developer",
+      location: "Remote",
       type: "Freelance",
-      challenges: "Diverse client requirements, tight deadlines, solo development",
-      actions: "Built 15+ web applications, managed client relationships, delivered on time",
-      results: "100% client retention rate, 5-star average rating",
-      skills: ["React", "Node.js", "MongoDB", "WordPress", "PHP"],
-      teamSize: "Solo work"
+      challenges: "Building a full-stack platform with limited team size, ensuring high performance and payment reliability",
+      actions: "Led front-end architecture with React, integrated with Django APIs, automated Stripe payments, and ran performance testing",
+      results: "Improved platform stability, boosted efficiency by 30%, and delivered a responsive, user-friendly e-commerce experience on time",
+      skills: ["React JS", "Django", "Stripe", "Git", "Tailwind CSS", "Frontend Development"],
+      teamSize: "2 developers"
     }
   ];
 

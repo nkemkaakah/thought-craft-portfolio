@@ -10,10 +10,34 @@ export const Contact = () => {
     projectType: 'general'
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    console.log("runs")
+    try {
+      const response = await fetch("http://localhost:3001/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        // Optionally show a “Thank you” message
+        console.log("Email sent successfully");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          projectType: "general",
+        });
+      } else {
+        const { error } = await response.json();
+        console.error("Submission error:", error);
+      }
+    } catch (err) {
+      console.error("Network error:", err);
+    }
   };
 
   const contactMethods = [
@@ -21,30 +45,19 @@ export const Contact = () => {
       icon: Mail,
       title: "Email Me",
       description: "For detailed project discussions",
-      action: "your.email@example.com",
-      color: "text-blue-400"
+      action: "nkemkaomeiza@gmail.com",
+      color: "text-blue-400",
+      link: "mailto:nkemkaomeiza@gmail.com"
     },
     {
       icon: MessageSquare,
       title: "Let's Chat",
       description: "Quick questions or brainstorming",
       action: "LinkedIn DM",
-      color: "text-green-400"
-    },
-    {
-      icon: Calendar,
-      title: "Schedule a Call",
-      description: "15-min coffee chat about your project",
-      action: "Book a slot",
-      color: "text-purple-400"
-    },
-    {
-      icon: Coffee,
-      title: "Grab Coffee",
-      description: "If you're in the Bay Area",
-      action: "San Francisco, CA",
-      color: "text-yellow-400"
+      color: "text-green-400",
+      link: "https://www.linkedin.com/in/nkemka-akah-861408253/"
     }
+
   ];
 
   return (
@@ -56,7 +69,7 @@ export const Contact = () => {
             Let's Build Something Amazing
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Have an idea? Need a technical partner? Or just want to talk about the future of tech? 
+            Have an idea? Need a technical partner? Or just want to talk about the future of tech?
             I'm always excited to connect with fellow builders and dreamers.
           </p>
         </div>
@@ -65,21 +78,29 @@ export const Contact = () => {
           {/* Contact Methods */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-white mb-8">Get In Touch</h3>
-            
+
             {contactMethods.map((method, index) => (
-              <div
+              <a
                 key={index}
-                className="flex items-center gap-4 p-6 bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 group cursor-pointer"
+                href={method.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                <div className={`w-12 h-12 rounded-xl bg-slate-700/50 flex items-center justify-center group-hover:scale-110 transition-transform duration-200`}>
-                  <method.icon className={method.color} size={24} />
+                <div
+
+                  className="flex items-center gap-4 p-6 bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 group cursor-pointer"
+                >
+                  <div className={`w-12 h-12 rounded-xl bg-slate-700/50 flex items-center justify-center group-hover:scale-110 transition-transform duration-200`}>
+                    <method.icon className={method.color} size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-white mb-1">{method.title}</h4>
+                    <p className="text-gray-400 text-sm mb-2">{method.description}</p>
+                    <p className={`${method.color} font-medium`}>{method.action}</p>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-lg font-semibold text-white mb-1">{method.title}</h4>
-                  <p className="text-gray-400 text-sm mb-2">{method.description}</p>
-                  <p className={`${method.color} font-medium`}>{method.action}</p>
-                </div>
-              </div>
+              </a>
             ))}
 
             <div className="mt-8 p-6 bg-gradient-to-r from-purple-900/30 to-pink-900/30 backdrop-blur-sm rounded-2xl border border-purple-500/20">
@@ -93,14 +114,14 @@ export const Contact = () => {
           {/* Contact Form */}
           <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
             <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-gray-300 font-medium mb-2">Name</label>
                 <input
                   type="text"
                   value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
                   placeholder="Your name"
                   required
@@ -112,7 +133,7 @@ export const Contact = () => {
                 <input
                   type="email"
                   value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
                   placeholder="your.email@example.com"
                   required
@@ -123,7 +144,7 @@ export const Contact = () => {
                 <label className="block text-gray-300 font-medium mb-2">Project Type</label>
                 <select
                   value={formData.projectType}
-                  onChange={(e) => setFormData({...formData, projectType: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
                   className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:border-purple-500 transition-colors"
                 >
                   <option value="general">General Inquiry</option>
@@ -138,7 +159,7 @@ export const Contact = () => {
                 <label className="block text-gray-300 font-medium mb-2">Message</label>
                 <textarea
                   value={formData.message}
-                  onChange={(e) => setFormData({...formData, message: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={5}
                   className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors resize-none"
                   placeholder="Tell me about your project, idea, or just say hello!"
@@ -147,6 +168,7 @@ export const Contact = () => {
               </div>
 
               <button
+              onClick={handleSubmit}
                 type="submit"
                 className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/25 flex items-center justify-center gap-2"
               >
@@ -160,7 +182,7 @@ export const Contact = () => {
         {/* Footer */}
         <div className="mt-20 text-center border-t border-slate-700/50 pt-8">
           <p className="text-gray-400">
-            © 2024 Your Name. Built with React, TypeScript, and lots of ☕
+            © 2025 Nkemka Akah. Built with React, TypeScript, and lots of ☕
           </p>
           <p className="text-gray-500 text-sm mt-2">
             This portfolio is open source and continuously evolving.

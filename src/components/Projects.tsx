@@ -4,43 +4,42 @@ import { ExternalLink, Github } from 'lucide-react';
 export const Projects = () => {
   const projects = [
     {
-      title: "Zenfinder",
-      description: "AI-powered recruitment platform that revolutionizes how companies find and connect with top talent.",
-      purpose: "Built to solve the inefficiency in modern recruitment - helping companies find the right candidates 85% faster.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-      tags: ["#AI", "#ProblemSolver", "#ProductThinking"],
-      techStack: ["React", "Node.js", "OpenAI", "PostgreSQL"],
-      metrics: "Reduced sourcing time by 85% for 50k+ users",
-      links: {
-        live: "#",
-        github: "#",
-        post: "#"
+      "title": "Zenfinder",
+      "description": "AI-powered talent and lead discovery tool that lets users find relevant professionals or decision-makers using natural language prompts.",
+      "purpose": "Designed to eliminate hours of manual research by automating professional discovery with LLMs, NLP, and intelligent data aggregation.",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+      "tags": ["#AI", "#LLM", "#NLP", "#Productivity"],
+      "techStack": ["Python", "LangChain", "OpenAI", "NLTK", "React"],
+      "metrics": "Accelerated professional discovery for 50,000+ users by compressing hours of manual research into seconds",
+      "links": {
+        "live": "https://zenfinder.ai/",
+        
       }
     },
     {
-      title: "GrubGo",
-      description: "Smart food delivery optimization system that reduces delivery times and improves customer satisfaction.",
-      purpose: "Created to tackle the last-mile delivery problem with intelligent routing and real-time optimization.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      tags: ["#LLM", "#Optimization", "#RealTime"],
-      techStack: ["Python", "FastAPI", "Redis", "React"],
-      metrics: "Processed 500+ simulated orders/week during testing",
-      links: {
-        live: "#",
-        github: "#"
+      "title": "GrubGo",
+      "description": "Full-stack food delivery app built solo, with responsive React frontend and scalable Node.js backend managing real-time order flows.",
+      "purpose": "Designed to streamline food ordering and delivery through a clean UI, robust backend, and efficient cross-device performance.",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
+      "tags": ["#FoodTech", "#FullStack", "#ResponsiveUI"],
+      "techStack": ["React", "Tailwind CSS", "JavaScript", "Node.js", "PostgreSQL", "Docker"],
+      "metrics": "Handled dynamic orders and menu updates across multiple devices with real-time feedback integration",
+      "links": {
+        "live": "https://frontend-247ap1coj-nkemkas-projects.vercel.app/",
+        "github": "https://github.com/nkemkaakah/GrubGo"
       }
     },
     {
-      title: "CodeMentor AI",
-      description: "Intelligent code review assistant that provides contextual feedback and learning suggestions.",
-      purpose: "Designed to accelerate developer learning by providing instant, personalized code feedback.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
-      tags: ["#AI", "#Education", "#DeveloperTools"],
-      techStack: ["TypeScript", "OpenAI", "WebSockets", "MongoDB"],
-      metrics: "Helped 1000+ developers improve code quality",
-      links: {
-        live: "#",
-        github: "#"
+      "title": "IwemiResearch",
+      "description": "Full-stack e-commerce platform built in a 2-person team, with responsive frontend architecture and secure payment integration.",
+      "purpose": "Designed to deliver a seamless, efficient, and user-centric online shopping experience across all devices.",
+      "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      "tags": ["#Ecommerce", "#React", "#StripeIntegration"],
+      "techStack": ["React", "Django", "Stripe", "Tailwind CSS", "Git"],
+      "metrics": "Improved checkout reliability and boosted site efficiency by 30%",
+      "links": {
+        "live": "https://www.iwemiresearch.org/",
+        
       }
     }
   ];

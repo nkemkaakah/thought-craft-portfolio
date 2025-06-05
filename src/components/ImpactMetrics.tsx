@@ -16,23 +16,23 @@ export const ImpactMetrics = () => {
     },
     {
       icon: Users,
-      value: 50000,
+      value: 100,
       suffix: '+',
-      label: 'Users served',
-      description: 'Across all platforms',
+      label: 'Realistic usage capacity',
+      description: 'Benchmarked for async search handling in Zenfinder',
       color: 'text-blue-400'
     },
     {
       icon: TrendingUp,
       value: 500,
       suffix: '+',
-      label: 'Orders processed weekly',
-      description: 'GrubGo efficiency',
+      label: 'Simulated orders tested',
+      description: 'Validating real-time logic in GrubGo',
       color: 'text-purple-400'
     },
     {
       icon: Award,
-      value: 15,
+      value: 10,
       suffix: '+',
       label: 'Projects delivered',
       description: 'On time and on budget',

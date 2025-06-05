@@ -28,7 +28,7 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            YourName
+            Nkemka Akah
           </div>
           
           {/* Desktop Navigation */}
@@ -43,15 +43,15 @@ export const Navigation = () => {
               </a>
             ))}
             <div className="flex items-center space-x-4 ml-6">
-              <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors">
+              <a href="/https://github.com/nkemkaakah" className="text-gray-300 hover:text-purple-400 transition-colors">
                 <Github size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors">
+              <a href="/https://www.linkedin.com/in/nkemka-akah-861408253/" className="text-gray-300 hover:text-purple-400 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors">
+              {/* <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors">
                 <Twitter size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 
