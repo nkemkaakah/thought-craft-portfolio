@@ -14,7 +14,7 @@ export const Contact = () => {
     e.preventDefault();
     console.log("runs")
     try {
-      const response = await fetch("http://localhost:3001/api/contact", {
+      const response = await fetch("http://portfolio-env.eba-kzt677pv.eu-west-2.elasticbeanstalk.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

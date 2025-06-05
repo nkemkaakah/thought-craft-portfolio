@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
+    "deploy": "npm run build && aws s3 sync dist/ s3://my-unique-portfolio-bucket/ --delete",
     "lint": "eslint .",
     "preview": "vite preview"
   },

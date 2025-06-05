@@ -15,10 +15,10 @@ app.use(
 // Parse incoming JSON bodies
 app.use(express.json());
 
-/**
- * POST /api/contact
- * Expected JSON body: { name, email, message, projectType }
- */
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
 app.post('/api/contact', async (req, res) => {
   const { name, email, message, projectType } = req.body;
 
@@ -114,7 +114,7 @@ ${message}
 });
 
 // Start the server on port 3001
-const PORT = process.env.BACKEND_PORT || 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Express backend running at http://localhost:${PORT}`);
 });
