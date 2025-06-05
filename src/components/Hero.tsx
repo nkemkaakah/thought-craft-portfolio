@@ -24,8 +24,7 @@ export const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Full-stack developer crafting AI-powered solutions that solve real problems. 
-            Currently building the future of recruitment tech.
+          Seasoned full-stack web developer leveraging AI to craft scalable, real-world solutions and currently driving innovation in recruitment tech
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

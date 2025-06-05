@@ -7,7 +7,7 @@ export const Testimonials = () => {
       name: "Jade Adedeji",
       role: "Co Founder",
       company: "STEM METS RESOURCES ",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=64&h=64&fit=crop&crop=face",
+      avatar: "https://media.licdn.com/dms/image/v2/D5603AQEj1rzLHBbHSw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705586337550?e=1754524800&v=beta&t=u87AiSVb9A05lNX23KKoGqfHuuzW46sx5FqsB4XugHg",
       quote: "Exceptional problem-solver who consistently delivers beyond expectations. Their AI integration work revolutionized our recruitment process.",
       rating: 5,
       source: "LinkedIn Recommendation"
@@ -16,8 +16,8 @@ export const Testimonials = () => {
       name: "Arefin Ahammed",
       role: "Software Engineer",
       company: "Cambridge Consultants",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face",
-      quote: "Incredible attention to detail and user experience. The frontend architecture they built scaled beautifully as we grew from 100 to 10K users.",
+      avatar: "https://media.licdn.com/dms/image/v2/D4E03AQH4xny_b-tYHw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1665610202520?e=1754524800&v=beta&t=DFSOmqG3daeCzR9q96PVNRqs4fxrvCFDyTWiYYyWmOA",
+      quote: "Nkemka has always impressed by his passion for learning and constant drive to improve. He’s focused, hardworking, and genuinely committed to doing well, both in university and towards his future. I am sure he will excel in everything if he keeps up with his work.",
       rating: 5,
       source: "Direct Collaboration"
     },
@@ -25,7 +25,7 @@ export const Testimonials = () => {
       name: "Oremeyi Akah",
       role: "CCO",
       company: "Interswitch",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop&crop=face",
+      avatar: "https://media.licdn.com/dms/image/v2/D4E03AQFU4-bCSsZNSA/profile-displayphoto-shrink_400_400/B4EZXxWe1SHcAg-/0/1743510958544?e=1754524800&v=beta&t=u-lwe8sG1eWhucGDC6qTFEUXpdNQsJT7Mj1iAyAlTRk",
       quote: "Rare combination of technical excellence and business acumen. They don't just code – they understand the 'why' behind every feature.",
       rating: 5,
       source: "Client Testimonial"
@@ -34,8 +34,8 @@ export const Testimonials = () => {
       name: "Arden Elegbe",
       role: "Founder",
       company: "Zenstrin",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face",
-      quote: "Best mentor I've worked with. Their code reviews were masterclasses in clean architecture and best practices.",
+      avatar: "https://media.licdn.com/dms/image/v2/D4E03AQF1IXDjurywlw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1677834822465?e=1754524800&v=beta&t=U_fgJO088KTzehRqwqS1Cne64CuWAfgmVGPzdgRozn4",
+      quote: "One of the most dedicated students I've mentored. Their ability to absorb feedback and apply clean architecture principles was impressive.",
       rating: 5,
       source: "Team Feedback"
     }

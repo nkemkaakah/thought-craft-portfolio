@@ -1,6 +1,8 @@
 
 import { Mail, MessageSquare, Calendar, Coffee, Send } from 'lucide-react';
 import { useState } from 'react';
+import { useToast } from "@/hooks/use-toast";
+
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +11,8 @@ export const Contact = () => {
     message: '',
     projectType: 'general'
   });
+  const { toast } = useToast();
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,6 +27,10 @@ export const Contact = () => {
       });
   
       if (response.ok) {
+        toast({
+          title: "Message Sent ✅",
+          description: "Thanks for reaching out! I’ll get back to you soon.",
+        });
         // Optionally show a “Thank you” message
         console.log("Email sent successfully");
         setFormData({
@@ -32,8 +40,13 @@ export const Contact = () => {
           projectType: "general",
         });
       } else {
+        
         const { error } = await response.json();
         console.error("Submission error:", error);
+        toast({
+          title: "Message Not Sent ❌",
+          description: "Please try again. " + error,
+        });
       }
     } catch (err) {
       console.error("Network error:", err);
@@ -182,7 +195,7 @@ export const Contact = () => {
         {/* Footer */}
         <div className="mt-20 text-center border-t border-slate-700/50 pt-8">
           <p className="text-gray-400">
-            © 2025 Nkemka Akah. Built with React, TypeScript, and lots of ☕
+            © 2025 Nkemka Akah. Built with React, TypeScript, AWS, and lots of ☕
           </p>
           <p className="text-gray-500 text-sm mt-2">
             This portfolio is open source and continuously evolving.
