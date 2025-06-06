@@ -18,7 +18,7 @@ export const Contact = () => {
     e.preventDefault();
     console.log("runs")
     try {
-      const response = await fetch("http://portfolio-env.eba-kzt677pv.eu-west-2.elasticbeanstalk.com/api/contact", {
+      const response = await fetch("https://portfolio-env.eba-kzt677pv.eu-west-2.elasticbeanstalk.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -197,9 +197,9 @@ export const Contact = () => {
           <p className="text-gray-400">
             © 2025 Nkemka Akah. Built with React, TypeScript, AWS, and lots of ☕
           </p>
-          <p className="text-gray-500 text-sm mt-2">
+          {/* <p className="text-gray-500 text-sm mt-2">
             This portfolio is open source and continuously evolving.
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

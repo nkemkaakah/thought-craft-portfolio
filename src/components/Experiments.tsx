@@ -3,13 +3,14 @@ import {Brain, Beaker, Lightbulb, Shield, Globe, Database, BookOpen, GraduationC
 export const Experiments = () => {
   const experiments = [
     {
-      icon: Brain,
-      title: "AI Code Reviewer",
-      status: "In Progress",
-      description: "Building an intelligent code review system that learns from team preferences and coding standards.",
-      nextSteps: "Implement context-aware suggestions and integrate with popular Git platforms.",
-      techStack: ["OpenAI", "AST Parsing", "Python"],
-      stage: "70%"
+      icon: Shield,
+      title: "Cybersecurity Mastery",
+      status: "Learning",
+      description: "Deep diving into cybersecurity fundamentals through comprehensive Udemy's CompTIA Security+ Certification Courses, covering network security, ethical hacking, and threat analysis.",
+      nextSteps: "Complete penetration testing modules and earn cybersecurity certification.",
+      techStack: ["Palo Alto Networks", "Risk Management", "Security Architecture", "OWASP"],
+      stage: "35%",
+      type: "course"
     },
     {
       icon: Database,
@@ -17,7 +18,7 @@ export const Experiments = () => {
       status: "Building",
       description: "Building an anonymous, AI-augmented mental health platform offering 24/7 emotional support through journaling, mood tracking, and chatbot interaction — powered by full-stack technologies and NLP.",
       nextSteps: "Develop core journaling backend, integrate GPT-based chatbot, and implement secure data storage with no-account mode.",
-      techStack: ["Next.js", "Node.js", "Express", "PostgreSQL", "OpenAI API", "AWS"],
+      techStack: ["Next.js", "Django", "PostgreSQL", "OpenAI API", "AWS"],
       stage: "20%",
       type: "project"
     },

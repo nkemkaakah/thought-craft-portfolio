@@ -8,7 +8,7 @@ export const Testimonials = () => {
       role: "Co Founder",
       company: "STEM METS RESOURCES ",
       avatar: "https://media.licdn.com/dms/image/v2/D5603AQEj1rzLHBbHSw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705586337550?e=1754524800&v=beta&t=u87AiSVb9A05lNX23KKoGqfHuuzW46sx5FqsB4XugHg",
-      quote: "Exceptional problem-solver who consistently delivers beyond expectations. Their AI integration work revolutionized our recruitment process.",
+      quote: "Exceptional problem-solver who consistently delivers beyond expectations. His AI integration work revolutionized our recruitment process.",
       rating: 5,
       source: "LinkedIn Recommendation"
     },
@@ -26,7 +26,7 @@ export const Testimonials = () => {
       role: "CCO",
       company: "Interswitch",
       avatar: "https://media.licdn.com/dms/image/v2/D4E03AQFU4-bCSsZNSA/profile-displayphoto-shrink_400_400/B4EZXxWe1SHcAg-/0/1743510958544?e=1754524800&v=beta&t=u-lwe8sG1eWhucGDC6qTFEUXpdNQsJT7Mj1iAyAlTRk",
-      quote: "Rare combination of technical excellence and business acumen. They don't just code – they understand the 'why' behind every feature.",
+      quote: "Rare combination of technical excellence and business acumen. He doesn't just code – he understands the 'why' behind every feature.",
       rating: 5,
       source: "Client Testimonial"
     },
@@ -35,7 +35,7 @@ export const Testimonials = () => {
       role: "Founder",
       company: "Zenstrin",
       avatar: "https://media.licdn.com/dms/image/v2/D4E03AQF1IXDjurywlw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1677834822465?e=1754524800&v=beta&t=U_fgJO088KTzehRqwqS1Cne64CuWAfgmVGPzdgRozn4",
-      quote: "One of the most dedicated students I've mentored. Their ability to absorb feedback and apply clean architecture principles was impressive.",
+      quote: "One of the most dedicated students I've mentored. His ability to absorb feedback and apply clean architecture principles was impressive.",
       rating: 5,
       source: "Team Feedback"
     }

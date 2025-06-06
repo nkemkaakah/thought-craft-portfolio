@@ -47,7 +47,7 @@ export const ImpactMetrics = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
 
     const element = document.getElementById('impact-metrics');
@@ -60,6 +60,11 @@ export const ImpactMetrics = () => {
         observer.unobserve(element);
       }
     };
+  }, []);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsVisible(true), 3000);
+    return () => clearTimeout(timeout);
   }, []);
 
   const AnimatedNumber = ({ value, suffix }: { value: number; suffix: string }) => {
