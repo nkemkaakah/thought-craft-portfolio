@@ -4,11 +4,27 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 const app = express();
+const allowedOrigins = [
+  'http://localhost:8080',
+  'https://d2wyznm3b2paqi.cloudfront.net',
+  'https://nkemka.dev',
+];
 
 // Allow CORS from your Vite dev server (http://localhost:8080)
+// app.use(
+//   cors({
+//     origin: 'http://localhost:8080'
+//   })
+// );
 app.use(
   cors({
-    origin: 'http://localhost:8080'
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    }
   })
 );
 

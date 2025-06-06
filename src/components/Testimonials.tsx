@@ -8,7 +8,7 @@ export const Testimonials = () => {
       role: "Co Founder",
       company: "STEM METS RESOURCES ",
       avatar: "https://media.licdn.com/dms/image/v2/D5603AQEj1rzLHBbHSw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705586337550?e=1754524800&v=beta&t=u87AiSVb9A05lNX23KKoGqfHuuzW46sx5FqsB4XugHg",
-      quote: "Exceptional problem-solver who consistently delivers beyond expectations. His AI integration work revolutionized our recruitment process.",
+      quote: "It has been a pleasure watching Nkemkah grow with us at STEM METS RESOURCES, from a curious young learner to a dedicated and talented intern. From an early age, he demonstrated a deep passion for problem-solving, creativity, and continuous learning. His enthusiasm for robotics, coding, and critical thinking was always evident, and he consistently approached every task with diligence and a willingness to go the extra mile. Whether volunteering to support others or taking on complex projects, he brought a positive attitude and a collaborative spirit. We’re proud to have been part of his learning journey and excited to see all that he will accomplish in the future.",
       rating: 5,
       source: "LinkedIn Recommendation"
     },
