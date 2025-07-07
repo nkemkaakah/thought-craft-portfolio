@@ -8,7 +8,7 @@ const allowedOrigins = [
   'http://localhost:8080',
   'https://d2wyznm3b2paqi.cloudfront.net',
   'https://nkemka.dev',
-  "https://nkemka-dev.onrender.com/",
+  "https://nkemka-dev.onrender.com",
 ];
 
 // Allow CORS from your Vite dev server (http://localhost:8080)
@@ -25,7 +25,9 @@ app.use(
       } else {
         callback(new Error('Not allowed by CORS'));
       }
-    }
+    },
+    credentials: true,
+    optionsSuccessStatus: 200
   })
 );
 
