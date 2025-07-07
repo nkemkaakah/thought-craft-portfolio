@@ -8,6 +8,7 @@ const allowedOrigins = [
   'http://localhost:8080',
   'https://d2wyznm3b2paqi.cloudfront.net',
   'https://nkemka.dev',
+  "https://nkemka-dev.onrender.com/",
 ];
 
 // Allow CORS from your Vite dev server (http://localhost:8080)
