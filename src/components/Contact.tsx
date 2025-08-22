@@ -18,7 +18,7 @@ export const Contact = () => {
     e.preventDefault();
     console.log("runs")
     try {
-      const response = await fetch("https://thought-craft-portfolio.onrender.com//api/contact", {
+      const response = await fetch("https://thought-craft-portfolio.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

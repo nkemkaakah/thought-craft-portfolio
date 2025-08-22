@@ -55,6 +55,13 @@ export const Hero = () => {
               Let's Connect
             </a>
           </div>
+          
+          {/* Developer Hint */}
+          <div className="mt-8 text-center">
+            <p className="text-sm text-gray-500 font-mono animate-pulse">
+              💻 Developers: Toggle terminal theme in top-right corner
+            </p>
+          </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

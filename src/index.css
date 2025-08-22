@@ -1,9 +1,24 @@
+/* Import JetBrains Mono font for terminal */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
+    /* Terminal-specific CSS variables */
+    --terminal-bg: #0a0a0a;
+    --terminal-window: #1a1a1a;
+    --terminal-header: #2a2a2a;
+    --terminal-border: #404040;
+    --terminal-text: #00ff41;
+    --terminal-secondary: #888888;
+    --terminal-prompt-user: #00ff41;
+    --terminal-prompt-path: #4a9eff;
+    --terminal-success: #ffffff;
+    --terminal-warning: #ffff00;
+    --terminal-error: #ff4444;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -97,5 +112,79 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Terminal-specific styles */
+@layer utilities {
+  /* Terminal font family */
+  .font-terminal {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+  }
+
+  /* Custom scrollbar for terminal */
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Terminal scrollbar styling */
+  .terminal-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-track {
+    @apply bg-zinc-800;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-zinc-600 rounded;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-500;
+  }
+
+  /* Vertical text for mobile tabs */
+  .writing-mode-vertical-lr {
+    writing-mode: vertical-lr;
+  }
+
+  .text-orientation-mixed {
+    text-orientation: mixed;
+  }
+
+  /* Terminal-specific animations */
+  .terminal-blink {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .terminal-glow {
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+  }
+
+  /* Terminal fade-in animation */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

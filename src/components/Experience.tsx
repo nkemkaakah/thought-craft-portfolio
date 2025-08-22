@@ -2,16 +2,28 @@
 import { useState } from 'react';
 import { Calendar, MapPin, Users, Code, Rocket } from 'lucide-react';
 
-export const Experience = () => {
+const Experience = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [skillFilter, setSkillFilter] = useState('All');
 
   const experiences = [
     {
+      company: "Rulebase",
+      role: "Software Engineer",
+      period: "July 2025 - Present",
+      location: "London, UK",
+      type: "Full-time",
+      challenges: "Real-time LLM-powered insights integration, cross-functional collaboration with ML teams, and optimizing UI state management for compliance workflows",
+      actions: "Delivered React TypeScript components that surfaced LLM-powered QA insights, collaborated with ML and backend teams on risk-scoring model integration, optimized UI state management and event-driven architecture",
+      results: "Improved analyst decision-making speed by 35% through accessible UI workflows, contributed to API design and validation logic, reduced latency in flagged conversation review pipelines by 20%",
+      skills: ["React", "TypeScript", "Ruby on Rails", "LLMs", "API Design", "UI/UX"],
+      teamSize: "Cross-functional team"
+    },
+    {
       company: "Microsoft",
       role: "Software Engineer Intern",
       period: "June 2023 - August 2023",
-      location: "Lagos, Nigeria",
+      location: "Remote",
       type: "Internship",
       challenges: "Cross-platform deployment complexity, cloud service integration, and infrastructure reliability",
       actions: "Self-taught Bash for automation, supported data validation across AWS/Azure/GCP, collaborated with teams to troubleshoot and refine deployment pipelines",
@@ -169,3 +181,5 @@ export const Experience = () => {
     </section>
   );
 };
+
+export default Experience;

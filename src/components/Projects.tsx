@@ -4,31 +4,32 @@ import { ExternalLink, Github } from 'lucide-react';
 export const Projects = () => {
   const projects = [
     {
+      "title": "VoxGuard",
+      "description": "Real-time fraud detection platform that defends against AI-powered voice cloning and social engineering attacks, processing 500+ voice segments per minute.",
+      "purpose": "Built to combat the 3,000% surge in voice cloning fraud costing businesses $3 billion annually. Traditional call centers had zero defense against sophisticated AI attacks.",
+      "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop",
+      "tags": ["#AI", "#Security", "#FraudDetection", "#RealTime"],
+      "techStack": ["FastAPI", "Typescript", "LangGraph", "Postgres", "Python", "React", "TailwindCSS"],
+      "metrics": "82% deepfake detection accuracy, 65% faster fraud investigations, converting every attempted fraud into institutional knowledge",
+      "links": {
+        "live": "https://voxguard.vercel.app/",
+        "github": "https://github.com/nkemkaakah/voxguard"
+      }
+    },
+    {
       "title": "Zenfinder",
       "description": "AI-powered talent and lead discovery tool that lets users find relevant professionals or decision-makers using natural language prompts.",
       "purpose": "Designed to eliminate hours of manual research by automating professional discovery with LLMs, NLP, and intelligent data aggregation.",
       "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
       "tags": ["#AI", "#LLM", "#NLP", "#Productivity"],
-      "techStack": ["Python", "LangChain", "OpenAI", "NLTK", "React"],
+      "techStack": ["Python", "LangChain", "OpenAI", "React"],
       "metrics": "Accelerated professional discovery for 50,000+ users by compressing hours of manual research into seconds",
       "links": {
         "live": "https://zenfinder.ai/",
         
       }
     },
-    {
-      "title": "GrubGo",
-      "description": "Full-stack food delivery app built solo, with responsive React frontend and scalable Node.js backend managing real-time order flows.",
-      "purpose": "Designed to streamline food ordering and delivery through a clean UI, robust backend, and efficient cross-device performance.",
-      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      "tags": ["#FoodTech", "#FullStack", "#ResponsiveUI"],
-      "techStack": ["React", "Tailwind CSS", "JavaScript", "Node.js", "PostgreSQL", "Docker"],
-      "metrics": "Handled dynamic orders and menu updates across multiple devices with real-time feedback integration",
-      "links": {
-        "live": "https://frontend-247ap1coj-nkemkas-projects.vercel.app/",
-        "github": "https://github.com/nkemkaakah/GrubGo"
-      }
-    },
+   
     {
       "title": "IwemiResearch",
       "description": "Full-stack e-commerce platform built in a 2-person team, with responsive frontend architecture and secure payment integration.",
