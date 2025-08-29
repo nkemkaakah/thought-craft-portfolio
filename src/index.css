@@ -149,6 +149,29 @@
     @apply bg-zinc-500;
   }
 
+  /* Custom thin scrollbar for blog content */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thumb-purple-500\/50::-webkit-scrollbar-thumb {
+    background-color: rgba(168, 85, 247, 0.5);
+    border-radius: 3px;
+  }
+
+  .scrollbar-thumb-purple-500\/50::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(168, 85, 247, 0.7);
+  }
+
+  .scrollbar-track-slate-700\/50::-webkit-scrollbar-track {
+    background-color: rgba(51, 65, 85, 0.5);
+    border-radius: 3px;
+  }
+
   /* Vertical text for mobile tabs */
   .writing-mode-vertical-lr {
     writing-mode: vertical-lr;

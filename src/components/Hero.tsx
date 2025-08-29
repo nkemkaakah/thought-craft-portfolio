@@ -1,16 +1,17 @@
 
 import { ArrowDown, Coffee, Zap } from 'lucide-react';
+import { VoxGuardBlog } from './VoxGuardBlog';
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-start pt-32 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 w-full">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
             I build tools that{' '}
@@ -62,6 +63,11 @@ export const Hero = () => {
               💻 Developers: Toggle terminal theme in top-right corner
             </p>
           </div>
+        </div>
+
+        {/* Featured VoxGuard Blog Post */}
+        <div className="mt-20">
+          <VoxGuardBlog />
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

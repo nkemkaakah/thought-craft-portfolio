@@ -43,10 +43,10 @@ export const Navigation = () => {
               </a>
             ))}
             <div className="flex items-center space-x-4 ml-6">
-              <a href="/https://github.com/nkemkaakah" className="text-gray-300 hover:text-purple-400 transition-colors">
+              <a href="https://github.com/nkemkaakah" className="text-gray-300 hover:text-purple-400 transition-colors">
                 <Github size={20} />
               </a>
-              <a href="/https://www.linkedin.com/in/nkemka-akah-861408253/" className="text-gray-300 hover:text-purple-400 transition-colors">
+              <a href="https://www.linkedin.com/in/nkemka-akah" className="text-gray-300 hover:text-purple-400 transition-colors">
                 <Linkedin size={20} />
               </a>
               {/* <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors">
